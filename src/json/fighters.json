@@ -1,0 +1,25 @@
+{
+  "fighters": [
+    {
+      "id": 1,
+      "name": "選手名1",
+      "weight_class": "階級1",
+      "entrance_song": "入場曲1",
+      "organization": ["rizin", "k1"]
+    },
+    {
+      "id": 2,
+      "name": "選手名2",
+      "weight_class": "階級2",
+      "entrance_song": "入場曲2",
+      "organization": ["rizin"]
+    },
+    {
+      "id": 3,
+      "name": "選手名3",
+      "weight_class": "階級3",
+      "entrance_song": "入場曲3",
+      "organization": ["rizin"]
+    }
+  ]
+}
