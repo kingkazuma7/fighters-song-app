@@ -2,24 +2,35 @@
   "fighters": [
     {
       "id": 1,
-      "name": "選手名1",
-      "weight_class": "階級1",
+      "name": "川尻達也",
+      "weight_class": "ウェルター級",
       "entrance_song": "入場曲1",
-      "organization": ["rizin", "k1"]
+      "organization": ["rizin", "k1"],
+      "youtube_link": "https://www.youtube.com/embed/VIDEO_ID1"
     },
     {
       "id": 2,
-      "name": "選手名2",
-      "weight_class": "階級2",
+      "name": "朝倉未来",
+      "weight_class": "フェザー級",
       "entrance_song": "入場曲2",
-      "organization": ["rizin"]
+      "organization": ["rizin"],
+      "youtube_link": "https://www.youtube.com/embed/VIDEO_ID2"
     },
     {
       "id": 3,
-      "name": "選手名3",
-      "weight_class": "階級3",
+      "name": "堀口恭司",
+      "weight_class": "バンタム級",
       "entrance_song": "入場曲3",
-      "organization": ["rizin"]
+      "organization": ["rizin"],
+      "youtube_link": ""
+    },
+    {
+      "id": 4,
+      "name": "浜崎朱加",
+      "weight_class": "ストロー級",
+      "entrance_song": "入場曲4",
+      "organization": ["rizin"],
+      "youtube_link": "https://www.youtube.com/embed/VIDEO_ID4"
     }
   ]
 }
