@@ -1,13 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Box, Text, Heading, AspectRatio, Link } from "@chakra-ui/react";
-import { useLocation } from 'react-router-dom';
+import { Box, Text, Heading, AspectRatio, Button } from "@chakra-ui/react";
+import { useLocation, useNavigate } from 'react-router-dom'; // useHistoryをuseNavigateに変更
 import fightersData from '../../json/fighters.json';
 
 const FighterPage = () => {
   const location = useLocation();
   const id = location.pathname.split('/')[2];
   const fighter = fightersData.fighters.find(f => f.id === Number(id));
+  const navigate = useNavigate(); // useHistoryをuseNavigateに変更
 
   if (!fighter) {
     return null; // or return loading spinner, etc.
@@ -24,11 +25,7 @@ const FighterPage = () => {
         <Text mt="2">階級: {fighter.weight_class}</Text>
         <Text mt="2">入場曲: {fighter.entrance_song}</Text>
         <Text mt="2">所属団体: {fighter.organization.join(', ')}</Text>
-        {fighter.youtube_link && (
-          <AspectRatio ratio={16 / 9} mt="4">
-            <iframe src={fighter.youtube_link} allowFullScreen title={fighter.name} />
-          </AspectRatio>
-        )}
+        <Button mt="6" onClick={() => navigate(-1)}>一覧に戻る</Button>
       </Box>
     </>
   );
