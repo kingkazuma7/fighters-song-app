@@ -2,35 +2,35 @@
   "fighters": [
     {
       "id": 1,
-      "name": "川尻達也",
-      "weight_class": "ウェルター級",
-      "entrance_song": "入場曲1",
-      "organization": ["rizin", "k1"],
-      "youtube_link": "https://www.youtube.com/embed/VIDEO_ID1"
+      "name": "朝倉未来",
+      "weight_class": "フェザー級",
+      "entrance_song": "Battle Scars",
+      "organization": ["rizin"],
+      "youtube_link": "https://www.youtube.com/embed/4ka1Lgd3SAI"
     },
     {
       "id": 2,
-      "name": "朝倉未来",
-      "weight_class": "フェザー級",
-      "entrance_song": "入場曲2",
+      "name": "堀口恭司",
+      "weight_class": "バンタム級",
+      "entrance_song": "My Time",
       "organization": ["rizin"],
-      "youtube_link": "https://www.youtube.com/embed/VIDEO_ID2"
+      "youtube_link": "https://www.youtube.com/embed/SAFWA7qxC0E"
     },
     {
       "id": 3,
-      "name": "堀口恭司",
-      "weight_class": "バンタム級",
-      "entrance_song": "入場曲3",
-      "organization": ["rizin"],
-      "youtube_link": ""
-    },
-    {
-      "id": 4,
       "name": "浜崎朱加",
       "weight_class": "ストロー級",
-      "entrance_song": "入場曲4",
+      "entrance_song": "PRINCE OF YOKOHAMA 2016",
       "organization": ["rizin"],
       "youtube_link": "https://www.youtube.com/embed/VIDEO_ID4"
+    },
+    {
+      "id": 3,
+      "name": "朝倉海",
+      "weight_class": "バンタム級",
+      "entrance_song": "Forever Young",
+      "organization": ["rizin"],
+      "youtube_link": "https://www.youtube.com/embed/YEJJe8L-ANE"
     }
   ]
 }
