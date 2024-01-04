@@ -17,7 +17,7 @@ const FighterCard = ({ fighter }) => {
       <Text mt="2">入場曲: {fighter.entrance_song}</Text>
       <Text mt="2">所属団体: {fighter.organization.join(', ')}</Text>
       {fighter.youtube_link && (
-        <AspectRatio ratio={16 / 9} mt="4">
+        <AspectRatio maxW="560px" ratio={16 / 9} mt="4">
           <iframe src={fighter.youtube_link} allowFullScreen title={fighter.name} />
         </AspectRatio>
       )}

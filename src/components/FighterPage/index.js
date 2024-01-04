@@ -25,6 +25,11 @@ const FighterPage = () => {
         <Text mt="2">階級: {fighter.weight_class}</Text>
         <Text mt="2">入場曲: {fighter.entrance_song}</Text>
         <Text mt="2">所属団体: {fighter.organization.join(', ')}</Text>
+        {fighter.youtube_link && (
+          <AspectRatio maxW="560px" ratio={16 / 9} mt="4">
+            <iframe src={fighter.youtube_link} allowFullScreen title={fighter.name} />
+          </AspectRatio>
+        )}
         <Button mt="6" onClick={() => navigate(-1)}>一覧に戻る</Button>
       </Box>
     </>
