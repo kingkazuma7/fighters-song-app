@@ -8,8 +8,8 @@ const FighterCard = ({ fighter }) => {
       bg="white"
       p="6"
       rounded="lg"
-      shadow="lg"
-      _hover={{ boxShadow: "xl", bg: "gray.200" }} // ホバーエフェクトを追加
+      shadow="2xl"
+      _hover={{ boxShadow: "inner", bg: "gray.200" }} // ホバーエフェクトを追加
       transition="0.3s" // トランジションを追加
     >
       <Heading fontSize="xl">{fighter.name}</Heading>
