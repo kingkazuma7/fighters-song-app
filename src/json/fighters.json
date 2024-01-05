@@ -6,7 +6,10 @@
       "weight_class": "フェザー級",
       "entrance_song": "Battle Scars",
       "organization": ["rizin"],
-      "youtube_link": "https://www.youtube.com/embed/4ka1Lgd3SAI"
+      "youtube_link": "https://www.youtube.com/embed/4ka1Lgd3SAI",
+      "image": "https://d1uzk9o9cg136f.cloudfront.net/f/portal/16777301/rc/2023/05/24/5bd5a5ff98d12967709d9a95387d60a2342e7235_large.jpg",
+      "birthday": "1992年7月15日",
+      "height": "177"
     },
     {
       "id": 2,
@@ -14,7 +17,10 @@
       "weight_class": "バンタム級",
       "entrance_song": "My Time",
       "organization": ["rizin"],
-      "youtube_link": "https://www.youtube.com/embed/SAFWA7qxC0E"
+      "youtube_link": "https://www.youtube.com/embed/SAFWA7qxC0E",
+      "image": "https://d1uzk9o9cg136f.cloudfront.net/f/portal/16777301/rc/2024/01/01/89a8bde5fffa41dbd95e66ca420f902a9319c2ec_large.jpg",
+      "birthday": "1990年10月12日 ",
+      "height": "165"
     },
     {
       "id": 3,
@@ -22,15 +28,21 @@
       "weight_class": "ストロー級",
       "entrance_song": "PRINCE OF YOKOHAMA 2016",
       "organization": ["rizin"],
-      "youtube_link": "https://www.youtube.com/embed/VIDEO_ID4"
+      "youtube_link": "https://www.youtube.com/embed/VIDEO_ID4",
+      "image": "https://d1uzk9o9cg136f.cloudfront.net/f/portal/16777301/rc/2022/04/21/303437ccbc148b0706601c2c1ed095f5d752d6d4_large.jpg",
+      "birthday": "1982年3月31日",
+      "height": "158"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "朝倉海",
       "weight_class": "バンタム級",
       "entrance_song": "Forever Young",
       "organization": ["rizin"],
-      "youtube_link": "https://www.youtube.com/embed/YEJJe8L-ANE"
+      "youtube_link": "https://www.youtube.com/embed/YEJJe8L-ANE",
+      "image": "https://d1uzk9o9cg136f.cloudfront.net/f/portal/16777301/rc/2023/05/24/644a893108f33b616d32c8085756d627dab9dda4_large.jpg",
+      "birthday": "1993年10月31日",
+      "height": "173"
     }
   ]
 }

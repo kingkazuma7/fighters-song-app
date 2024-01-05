@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Box, Text, Heading, AspectRatio, Button } from "@chakra-ui/react";
+import { Box, Image, Text, Heading, AspectRatio, Button } from "@chakra-ui/react";
 import { useLocation, useNavigate } from 'react-router-dom'; // useHistoryをuseNavigateに変更
 import fightersData from '../../json/fighters.json';
 
@@ -22,9 +22,12 @@ const FighterPage = () => {
       </Helmet>
       <Box key={fighter.id} bg="white" p="6" rounded="lg" shadow="lg">
         <Heading fontSize="xl">{fighter.name}</Heading>
+        <Image src={fighter.image} mt="2" width={150}></Image>
         <Text mt="2">階級: {fighter.weight_class}</Text>
-        <Text mt="2">入場曲: {fighter.entrance_song}</Text>
+        <Text mt="2">生年月日: {fighter.birthday}</Text>
+        <Text mt="2">身長: {fighter.height}cm</Text>
         <Text mt="2">所属団体: {fighter.organization.join(', ')}</Text>
+        <Text mt="2">入場曲: {fighter.entrance_song}</Text>
         {fighter.youtube_link && (
           <AspectRatio maxW="560px" ratio={16 / 9} mt="4">
             <iframe src={fighter.youtube_link} allowFullScreen title={fighter.name} />
