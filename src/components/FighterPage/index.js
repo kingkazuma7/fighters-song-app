@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Box, Image, Text, Heading, AspectRatio, Button } from "@chakra-ui/react";
+import { Box, Image, Text, Heading, AspectRatio, Button, Link } from "@chakra-ui/react";
 import { useLocation, useNavigate } from 'react-router-dom'; // useHistoryをuseNavigateに変更
 import fightersData from '../../json/fighters.json';
 
@@ -23,6 +23,7 @@ const FighterPage = () => {
       <Box key={fighter.id} bg="white" p="6" rounded="lg" shadow="lg">
         <Heading fontSize="xl">{fighter.name}</Heading>
         <Image src={fighter.image} alt={fighter.name} mt="2" width={150}></Image>
+        <Text mt="2" fontSize="10px"><Link href={fighter.image_source} isExternal> 出典: {fighter.name} RIZIN公式</Link></Text>
         <Text mt="2">階級: {fighter.weight_class}</Text>
         <Text mt="2">生年月日: {fighter.birthday}</Text>
         <Text mt="2">身長: {fighter.height}cm</Text>
