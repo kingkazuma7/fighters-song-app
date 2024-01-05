@@ -34,7 +34,7 @@ function FightersList() {
         />
         <Stack spacing="4">
           {filteredFighters.map(fighter => (
-            <Box key={fighter.id} onClick={() => handleClick(fighter.id)} cursor="pointer">
+            <Box key={fighter.id} onClick={() => handleClick(fighter.id)} cursor="pointer" pb="10">
               <FighterCard fighter={fighter} />
             </Box>
           ))}
