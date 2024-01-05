@@ -14,7 +14,7 @@ const FighterCard = ({ fighter }) => {
     >
       <Heading fontSize="xl">{fighter.name}</Heading>
       <Image src={fighter.image} alt={fighter.name} mt="2" width={150}></Image>
-      <Text mt="2" fontSize="10px"><Link href={fighter.image_source} isExternal> 出典: {fighter.name} RIZIN公式</Link></Text>
+      <Text mt="2" mb="4" fontSize="xs"><Link href={fighter.image_source} isExternal> 出典: {fighter.name} RIZIN公式</Link></Text>
       <Text mt="2">入場曲: {fighter.entrance_song}</Text>
       {fighter.youtube_link && (
         <AspectRatio maxW="560px" ratio={16 / 9} mt="4">

@@ -23,7 +23,7 @@ const FighterPage = () => {
       <Box key={fighter.id} bg="white" p="6" rounded="lg" shadow="lg">
         <Heading fontSize="xl">{fighter.name}</Heading>
         <Image src={fighter.image} alt={fighter.name} mt="2" width={150}></Image>
-        <Text mt="2" fontSize="10px"><Link href={fighter.image_source} isExternal> 出典: {fighter.name} RIZIN公式</Link></Text>
+        <Text mt="2" mb="4" fontSize="xs"><Link href={fighter.image_source} isExternal> 出典: {fighter.name} RIZIN公式</Link></Text>
         <Text mt="2">階級: {fighter.weight_class}</Text>
         <Text mt="2">生年月日: {fighter.birthday}</Text>
         <Text mt="2">身長: {fighter.height}cm</Text>
@@ -34,7 +34,7 @@ const FighterPage = () => {
             <iframe src={fighter.youtube_link} allowFullScreen title={fighter.name} />
           </AspectRatio>
         )}
-        <Button mt="6" onClick={() => navigate(-1)}>一覧に戻る</Button>
+        <Button mt="6" fontSize="lg" onClick={() => navigate(-1)}>一覧に戻る</Button>
       </Box>
     </>
   );

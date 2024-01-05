@@ -4,6 +4,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import FightersList from './components//FightersList';
 import FighterPage from './components/FighterPage';
 import Header from './components/Header/Header';
+import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<FightersList />} />
         <Route path="/fighters/:id" element={<FighterPage />} />
       </Routes>
+      <Footer />
     </Router>
   </ChakraProvider>
   );

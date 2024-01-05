@@ -32,7 +32,7 @@ function FightersList() {
           onChange={event => setSearchTerm(event.target.value)}
           mb={10}
           height={{ base: "60px", md: "40px" }}
-          fontSize={18}
+          fontSize="lg"
         />
         <Stack spacing="4">
           {filteredFighters.map(fighter => (
