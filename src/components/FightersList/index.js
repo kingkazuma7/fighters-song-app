@@ -28,9 +28,11 @@ function FightersList() {
     <ChakraProvider>
       <Box padding="6" borderWidth="1px" borderRadius="lg">
         <Input 
-          placeholder="選手名で検索"
+          placeholder="選手名で検索 （例:朝倉未来"
           onChange={event => setSearchTerm(event.target.value)}
           mb={10}
+          height={{ base: "60px", md: "40px" }}
+          fontSize={18}
         />
         <Stack spacing="4">
           {filteredFighters.map(fighter => (
