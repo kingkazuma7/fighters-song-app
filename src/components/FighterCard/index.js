@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, Heading, AspectRatio, Link } from "@chakra-ui/react";
+import { Box, Text, Heading, AspectRatio } from "@chakra-ui/react";
 
 const FighterCard = ({ fighter }) => {
   return (

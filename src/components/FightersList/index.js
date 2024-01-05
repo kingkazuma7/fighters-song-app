@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import fightersData from '../../json/fighters.json';
-import { ChakraProvider, Box, Stack, Input, Link } from "@chakra-ui/react";
+import { ChakraProvider, Box, Stack, Input } from "@chakra-ui/react";
 import FighterCard from '../FighterCard';
 
 function FightersList() {
