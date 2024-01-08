@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import fightersData from '../../json/fighters.json';
 import { ChakraProvider, Box, Stack, Input } from "@chakra-ui/react";
 import FighterCard from '../FighterCard';
+import AddFighterForm from '../AddFighterForm/AddFighterForm';
 
 function FightersList() {
   const navigate = useNavigate();
@@ -23,6 +24,10 @@ function FightersList() {
   const handleClick = (id) => {
   navigate(`/fighters/${id}`);
   };
+  
+  const addFighter = (newFighter) => {
+    setFighters([...fighters, newFighter]);
+  };
 
   return (
     <ChakraProvider>
@@ -40,6 +45,7 @@ function FightersList() {
               <FighterCard fighter={fighter} />
             </Box>
           ))}
+          <AddFighterForm />
         </Stack>
       </Box>
     </ChakraProvider>

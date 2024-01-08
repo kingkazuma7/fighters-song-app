@@ -1,36 +1,15 @@
-import React, { useState } from 'react'
-import axios from 'axios';
+import React from 'react'
 
-const AddFighterForm = ({ onNewFighter }) => {
-  const [formData, setFormData] = useState({
-    name: '',
-    weight_class: '',
-    entrance_song: '',
-    organization: [],
-    youtube_link: '',
-    image: '',
-    image_source: '',
-    birthday: '',
-    height: ''
-  });
-  
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-  
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post('../../json/fighters.json', formData);
-      onNewFighter(response.data); // Update parent component's state
-    } catch (error) {
-      console.error('There was an error submitting the form:', error);
-    }
-  };
-  
+const AddFighterForm = () => {
   return (
-    <form onSubmit={handleSubmit}>選手を追加する</form>
+    <div>AddFighterFormのコンポ
+      <ul>
+        <li>仮</li>
+        <li>選手を追加するページに飛ばす</li>
+        <li>飛び先でform入力のようなイメージ</li>
+        <li>送信でLISTに上記で登録した選手が登録されている</li>
+      </ul>
+    </div>
   )
 }
 
