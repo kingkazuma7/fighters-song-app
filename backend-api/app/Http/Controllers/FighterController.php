@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Fighter;
 use Illuminate\Http\Request;
 
 class FighterController extends Controller
@@ -35,6 +36,11 @@ class FighterController extends Controller
     public function store(Request $request)
     {
         //
+        $fighter = new Fighter();
+        $fighter->name = $request->name;
+        $fighter->save();
+        
+        return response()->json($fighter, 201);
     }
 
     /**
